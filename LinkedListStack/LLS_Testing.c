@@ -1,21 +1,47 @@
-/*
-* 스택 초기화 함수
-* Push
-* Pop
-* 개수 세기
-* 맨 위의 값 보기
-*/
 #include "LLS_Header.h"
 
-void LSS_InitStack(LinkedListStack** Stack)
+int main()
 {
-	(*Stack) = (LinkedListStack*)malloc(sizeof(LinkedListStack));
+	LinkedListStack* Stack;
+	Node* popedNode;
+	LLS_InitStack(&Stack);
 
-	if ((*Stack) == NULL)
-	{
-		printf("스택이 할당되지 않았습니다");
-		return;
-	}
+	LLS_Push(Stack, 1);
+	LLS_Push(Stack, 2);
+	LLS_Push(Stack, 3);
+	LLS_Push(Stack, 4);
+	LLS_Push(Stack, 5);
 
-	(*Stack)->topNode = NULL;
+	printf("최상위 노드의 값 : %d\n", LLS_GetTopElement(*Stack));
+	
+	LLS_Destroy(Stack);
+
+	LLS_Push(Stack, 1);
+	LLS_Push(Stack, 2);
+	LLS_Push(Stack, 3);
+	LLS_Push(Stack, 4);
+	LLS_Push(Stack, 5);
+
+	popedNode = LLS_Pop(Stack);
+	printf("요소 : %d\n", popedNode->Data);
+	free(popedNode);
+
+	popedNode = LLS_Pop(Stack);
+	printf("요소 : %d\n", popedNode->Data);
+	free(popedNode);
+
+	popedNode = LLS_Pop(Stack);
+	printf("요소 : %d\n", popedNode->Data);
+	free(popedNode);
+
+	popedNode = LLS_Pop(Stack);
+	printf("요소 : %d\n", popedNode->Data);
+	free(popedNode);
+
+	popedNode = LLS_Pop(Stack);
+	printf("요소 : %d\n", popedNode->Data);
+	free(popedNode);
+
+
+
 }
