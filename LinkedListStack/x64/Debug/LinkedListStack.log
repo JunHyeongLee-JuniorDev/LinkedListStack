@@ -1,0 +1,11 @@
+﻿  LLS_Func.c
+  LLS_Testing.c
+C:\Users\KGA\source\repos\LinkedListStack\LinkedListStack\LLS_Header.h(11,2): error C2061: 구문 오류: 식별자 'Node'
+C:\Users\KGA\source\repos\LinkedListStack\LinkedListStack\LLS_Header.h(12,1): error C2059: 구문 오류: '}'
+C:\Users\KGA\source\repos\LinkedListStack\LinkedListStack\LLS_Header.h(16,2): error C2061: 구문 오류: 식별자 'Node'
+C:\Users\KGA\source\repos\LinkedListStack\LinkedListStack\LLS_Header.h(17,1): error C2059: 구문 오류: '}'
+C:\Users\KGA\source\repos\LinkedListStack\LinkedListStack\LLS_Testing.c(10,35): error C2143: 구문 오류: ')'이(가) '*' 앞에 없습니다.
+C:\Users\KGA\source\repos\LinkedListStack\LinkedListStack\LLS_Testing.c(10,35): error C2143: 구문 오류: '{'이(가) '*' 앞에 없습니다.
+C:\Users\KGA\source\repos\LinkedListStack\LinkedListStack\LLS_Testing.c(10,42): error C2059: 구문 오류: ')'
+C:\Users\KGA\source\repos\LinkedListStack\LinkedListStack\LLS_Testing.c(11,1): error C2054: 'Stack' 다음에 '('가 필요합니다.
+  코드를 생성하고 있습니다...
